@@ -27,6 +27,7 @@
     supervisor: supervisor,
     author: author,
     logo_path: logo_path,
+    bib_path: bib_path,
     university: university,
     description: description,
     submissionDate: submissionDate
