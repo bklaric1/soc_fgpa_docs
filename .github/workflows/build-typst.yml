@@ -1,0 +1,31 @@
+name: Build typst
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_release_thesis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+
+      - name: Install required fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget https://mirrors.ctan.org/fonts/newcomputermodern.zip
+          unzip newcomputermodern.zip
+          sudo mkdir -p /usr/local/share/fonts/newcomputermodern
+          sudo cp newcomputermodern/otf/* /usr/local/share/fonts/newcomputermodern/
+          fc-cache -f -v
+          rm -rf newcomputermodern*
+
+      - uses: typst-community/setup-typst@v3
+
+      - name: Compile documents
+        run: |
+          typst compile thesis.typ thesis.pdf
