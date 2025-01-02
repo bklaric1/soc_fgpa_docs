@@ -31,21 +31,21 @@
 
   
   // --- Title Page ---
-  v(1cm)
+  v(0.5cm)
   align(center, image(logo_path, width: 26%))
 
-  v(5mm)
-  align(center, text(font: sans-font, 2em, weight: 700, university))
+  v(1mm)
+  align(center, text(font: sans-font, 1.5em, weight: 700, university))
 
-  v(5mm)
-  align(center, text(font: sans-font, 1.5em, weight: 100, description))
+  v(2mm)
+  align(center, text(font: sans-font, 1em, weight: 100, description))
   
-  v(15mm)
+  v(10mm)
   align(center, text(font: sans-font, 2em, weight: 700, title))
 
 
-
   let entries = ()
+  v(1cm)
   entries.push(("Author: ", author))
   entries.push(("Supervisor: ", supervisor))
   entries.push(("Submission Date: ", submissionDate.display("[day].[month].[year]")))
