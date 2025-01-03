@@ -7,7 +7,6 @@
 // Go ahead and customize it to your liking!
 #let proposal(
   title: "",
-  degree: "",
   program: "",
   supervisor: "",
   author: "",
@@ -22,7 +21,6 @@
 ) = {
   titlepage(
     title: title,
-    degree: degree,
     program: program,
     supervisor: supervisor,
     author: author,

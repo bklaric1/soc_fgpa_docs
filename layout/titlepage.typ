@@ -1,6 +1,5 @@
 #let titlepage(
   title: "",
-  degree: "",
   program: "",
   supervisor: "",
   author: "",

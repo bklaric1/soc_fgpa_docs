@@ -1,6 +1,4 @@
-// Enter your thesis data here:
-#let title = "Documentation on SoC-FPGAs"
-#let degree = "Bachelor"
+#let title = "Seminar paper on SoC-FPGAs"
 #let program = "Computer Engineering"
 #let supervisor = "Prof. Dr. Michael Strohmeier"
 #let author = "Benjamin Klarić"
