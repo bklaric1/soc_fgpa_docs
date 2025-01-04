@@ -1,7 +1,5 @@
-#import "/utils/todo.typ": TODO
-#import "@preview/babble-bubbles:0.1.0": *
 
-
+= SoC FPGA
 
 = Header1
 == Header2
@@ -9,6 +7,8 @@
 ==== Header4
 
 $"offset" = n_"word" * "word_size" = 7 * 32 = 224 "bits"$ -> Formula
+
+Test @bruegge2004object
 
 
 @tab:peripheral_status0 -> reference to a table
@@ -23,3 +23,5 @@ $"offset" = n_"word" * "word_size" = 7 * 32 = 224 "bits"$ -> Formula
     [_NOT USED_],[16],[31],[16], [addresspace is not used. Filled with zeros]
   ), caption: [buffer usage]
 )<tab:peripheral_status0>
+
+#pagebreak()

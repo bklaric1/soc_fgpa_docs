@@ -4,6 +4,6 @@
 #let author = "Benjamin Klarić"
 #let university = "Technical University of Applied Sciences Augsburg"
 #let description = "Seminar: New Technologies"
-#let logo_path = "/figures/tha.jpg"
+#let logo_path = "/figures/0_titlepage/tha.jpg"
 #let bib_path = "/thesis.bib"
 #let submissionDate = datetime(day: 14, month: 1, year: 2025)

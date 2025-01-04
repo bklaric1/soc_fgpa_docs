@@ -10,7 +10,6 @@
   submissionDate: datetime,
 ) = {
 
-  
   set page(
     margin: (left: 20mm, right: 20mm, top: 30mm, bottom: 30mm),
     numbering: none,
@@ -27,29 +26,28 @@
   )
 
   set par(leading: 0.5em)
-
   
   // --- Title Page ---
   v(0.5cm)
   align(center, image(logo_path, width: 26%))
 
   v(1mm)
-  align(center, text(font: sans-font, 1.5em, weight: 700, university))
+  align(center, text(font: sans-font, 1.2em, weight: 300, university))
 
-  v(2mm)
-  align(center, text(font: sans-font, 1em, weight: 100, description))
+  v(1mm)
+  align(center, text(font: sans-font, 1em, weight: 200, description))
   
   v(10mm)
   align(center, text(font: sans-font, 2em, weight: 700, title))
 
 
   let entries = ()
-  v(1cm)
+  v(10mm)
   entries.push(("Author: ", author))
   entries.push(("Supervisor: ", supervisor))
   entries.push(("Submission Date: ", submissionDate.display("[day].[month].[year]")))
 
-  v(1cm)
+  v(10mm)
   align(
     center,
     grid(
