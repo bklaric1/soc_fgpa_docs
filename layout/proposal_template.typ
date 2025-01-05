@@ -54,12 +54,12 @@
   set heading(numbering: "1.1")
 
   // --- Paragraphs ---
-  let firstParagraphIndent = 1.45em
+  let firstParagraphIndent = 0em
   show heading: it => {
     it
     h(firstParagraphIndent)
   }
-  set par(leading: 1em, justify: true, first-line-indent: 2em)
+  set par(leading: 0.85em, justify: true, first-line-indent: 2em, spacing: 0.85em)
 
   // --- Citation Style ---
   set cite(style: "alphanumeric")
