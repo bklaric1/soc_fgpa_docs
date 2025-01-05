@@ -26,5 +26,4 @@
 #include "/content/4_fpga.typ"
 #include "/content/5_soc.typ"
 #include "/content/6_soc_fpga.typ"
-#include "/content/7_context.typ"
-#include "/content/8_future_perspectives.typ"
+#include "/content/7_future_perspectives.typ"

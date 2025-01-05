@@ -1,7 +1,7 @@
 = Research
 
 The research for this paper was done using many methods. 
-For general information, I used many internet pages, like Wikipedia, various technical blogs and even online teaching material from few subjects held at the Technical University of Applied Research. The subjects in question were the already mentioned “Digital technology” and “Design of digital systems 1”, which were regular curriculum for my study degree.
+For general information, I used many internet pages, like Wikipedia, various technical blogs and even online teaching material from few subjects held at the Technical University of Applied Research. The subjects in question were the already mentioned _Digital technology_ and _Design of digital systems 1_, which were regular curriculum for my study degree.
 
 For more technical details included, I referred to the datasheets of the manufacturer, for example the datasheet of the Intel (f.k.a. Altera) Cyclone 5 FPGA SoC which I referenced many times in my presentation and will be referencing in this paper as well.
 

@@ -5,10 +5,21 @@
 === Header3
 ==== Header4
 
+
+The combination of these technologies is shown in the @fig:soc_fpga_architecure.
+
+#figure(
+  image("/figures/6_soc_fpga/SoC FPGA Architecture.jpg", width: 75%),
+  caption: [
+    Typical SoC FPGA architecture @chen2024
+  ],
+)<fig:soc_fpga_architecure>
+
+Each domain has some core components. For FPGAs it's the FPGA fabric, which houses large number of logic blocks, general purpose inputs/outputs and Intelectual Properties (IPs). 
+
+
+
 $"offset" = n_"word" * "word_size" = 7 * 32 = 224 "bits"$ -> Formula
-
-Test @bruegge2004object
-
 
 @tab:peripheral_status0 -> reference to a table
 

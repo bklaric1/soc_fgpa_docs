@@ -62,12 +62,12 @@
   set par(leading: 0.85em, justify: true, first-line-indent: 2em, spacing: 0.85em)
 
   // --- Citation Style ---
-  set cite(style: "alphanumeric")
+  set cite(style: "institute-of-physics-numeric")
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
 
   body
 
-  bibliography("/thesis.bib")
+  bibliography("/references.bib")
 }
