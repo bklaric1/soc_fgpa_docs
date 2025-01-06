@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  build_release_thesis:
+  build_release_paper:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,4 +28,4 @@ jobs:
 
       - name: Compile documents
         run: |
-          typst compile thesis.typ thesis.pdf
+          typst compile paper.typ paper.pdf
