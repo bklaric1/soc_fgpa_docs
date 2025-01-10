@@ -1,5 +1,5 @@
 #import "/layout/titlepage.typ": *
-#import "/utils/print_page_break.typ": *
+#import "/layout/print_page_break.typ": *
 
 #let proposal(
   title: "",
@@ -54,12 +54,7 @@
   set heading(numbering: "1.1")
 
   // --- Paragraphs ---
-  let firstParagraphIndent = 0em
-  show heading: it => {
-    it
-    h(firstParagraphIndent)
-  }
-  set par(leading: 0.85em, justify: true, first-line-indent: 2em, spacing: 0.85em)
+  set par(leading: 0.85em, justify: true, spacing: 0.85em)
 
   // --- Citation Style ---
   set cite(style: "institute-of-physics-numeric")

@@ -1,5 +1,4 @@
 = Research
-
 The research for this paper was done using many methods. 
 For general information, I used many internet pages, like Wikipedia, various technical blogs and even online teaching material from few subjects held at the Technical University of Applied Research. The subjects in question were the already mentioned _Digital technology_ and _Design of digital systems 1_, which were regular curriculum for my study degree.
 

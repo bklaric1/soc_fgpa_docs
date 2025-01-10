@@ -1,5 +1,4 @@
 = Introduction
-
 The title of this paper raises several fundamental questions for readers unfamiliar with the topic: 
 - What is an FPGA? 
 - What does the term SoC mean? 

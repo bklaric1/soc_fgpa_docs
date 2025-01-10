@@ -1,6 +1,6 @@
 #import "/layout/proposal_template.typ": *
 #import "/metadata.typ": *
-#import "/utils/print_page_break.typ": *
+#import "/layout/print_page_break.typ": *
 
 #set document(title: title, author: author)
 
@@ -16,7 +16,9 @@
   submissionDate: submissionDate,
 )
 
-#outline()
+#outline(
+  indent: auto
+)
 #pagebreak()
 
 #set heading(numbering: "1.1")
