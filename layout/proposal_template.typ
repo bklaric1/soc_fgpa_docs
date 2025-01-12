@@ -35,6 +35,8 @@
     number-align: center,
   )
 
+  show link: underline
+
   // Save heading and body font families in variables.
   let body-font = "New Computer Modern"
   let sans-font = "New Computer Modern Sans"
@@ -54,15 +56,15 @@
   set heading(numbering: "1.1")
 
   // --- Paragraphs ---
-  set par(leading: 0.85em, justify: true, spacing: 0.85em)
+  set par(leading: 0.85em, justify: true, first-line-indent: 1.5em, spacing: 0.85em)
 
   // --- Citation Style ---
-  set cite(style: "institute-of-physics-numeric")
+  set cite(style: "springer-vancouver")
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
 
   body
 
-  bibliography("/references.bib")
+  bibliography("/references.bib", style: "ieee")
 }
