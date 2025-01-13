@@ -51,12 +51,16 @@
   show math.equation: set text(weight: 400)
 
   // --- Headings ---
-  show heading: set block(below: 0.85em, above: 1.75em)
+  show heading: set block(below: 0.0em, above: 2em)
   show heading: set text(font: body-font)
   set heading(numbering: "1.1")
+  show heading: it =>  {
+    it
+    par()[#text(size:1.3em)[#h(0.0em)]]
+  }
 
   // --- Paragraphs ---
-  set par(leading: 0.85em, justify: true, first-line-indent: 1.5em, spacing: 0.85em)
+  set par(leading: 0.85em, justify: true, first-line-indent: 1.3em, spacing: 0.85em)
 
   // --- Citation Style ---
   set cite(style: "institute-of-electrical-and-electronics-engineers")

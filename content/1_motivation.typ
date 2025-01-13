@@ -4,10 +4,10 @@ This subject has been a point of my interest for some time now. I first took not
 #figure(
   image("/figures/1_motivation/SoC_FPGA.jpg", width: 75%),
   caption: [
-    Terasic DE1-SoC board
+    Terasic DE1-SoC board with Cyclone V SoC FPGA chip
   ],
 )<fig:terasic>
-
+#{ "  " }
 The technology was always compelling to me. I have wanted for a long time to delve deeper in the core to learn about everything there is to know about the FPGA technology and incorporation of an integrated processor systems with the FPGA on a single chip. The seminar, with the presentation and this paper, presented itself as a great way to dive deeper in the subject, with the proper motivation.
 
 #pagebreak()

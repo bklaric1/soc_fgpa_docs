@@ -2,7 +2,8 @@
 The title of this paper raises several fundamental questions for readers unfamiliar with the topic: 
 - What is an FPGA? 
 - What does the term SoC mean? 
-- And how are these concepts combined? 
+- And how are these concepts combined?
+#{ "  " }
 In this introduction, an initial overview of these concepts will be provided to establish the foundation for the discussion that follows, while the rest of the paper aims to answer these questions in depth.
 
 The name FPGA stands for Field Programmable Gate Array. It is a type of integrated circuit (IC) which can be purposely reconfigured after manufacturing. As the name suggests, an FPGA consists of connected programmable logic blocks @fpga_wikipedia.
