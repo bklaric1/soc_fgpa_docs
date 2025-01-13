@@ -1,10 +1,4 @@
-
 = SoC FPGA
-(Header1)
-== Header2
-=== Header3
-==== Header4
-
 
 The combination of these technologies is shown in the @fig:soc_fpga_architecure.
 
@@ -16,8 +10,6 @@ The combination of these technologies is shown in the @fig:soc_fpga_architecure.
 )<fig:soc_fpga_architecure>
 
 Each domain has some core components. For FPGAs it's the FPGA fabric, which houses large number of logic blocks, general purpose inputs/outputs and Intelectual Properties (IPs). 
-
-
 
 $"offset" = n_"word" * "word_size" = 7 * 32 = 224 "bits"$ -> Formula
 

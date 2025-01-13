@@ -29,3 +29,11 @@
 #include "/content/5_soc.typ"
 #include "/content/6_soc_fpga.typ"
 #include "/content/7_future_perspectives.typ"
+
+#set heading(numbering: none)
+#heading("List of Figures")
+#outline(
+  title: none,
+  target: figure.where(kind: image)
+)
+#pagebreak()

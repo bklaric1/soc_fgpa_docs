@@ -59,12 +59,12 @@
   set par(leading: 0.85em, justify: true, first-line-indent: 1.5em, spacing: 0.85em)
 
   // --- Citation Style ---
-  set cite(style: "springer-vancouver")
+  set cite(style: "institute-of-electrical-and-electronics-engineers")
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
 
   body
 
-  bibliography("/references.bib", style: "ieee")
+  bibliography("/references.bib")
 }
