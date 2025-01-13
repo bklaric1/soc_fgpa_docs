@@ -1,5 +1,11 @@
 = SoC FPGA
 
+== Basics
+
+== Architecture
+
+== Comparison with soft IP
+
 The combination of these technologies is shown in the @fig:soc_fpga_architecure.
 
 #figure(
@@ -8,7 +14,15 @@ The combination of these technologies is shown in the @fig:soc_fpga_architecure.
     Typical SoC FPGA architecture @chen2024
   ],
 )<fig:soc_fpga_architecure>
+#{ "" }
 
+#figure(
+  image("/figures/6_soc_fpga/HPS_ARM.jpg", width: 75%),
+  caption: [
+    Caption @intel2024hps
+  ],
+)<fig:name>
+#{ "" }
 Each domain has some core components. For FPGAs it's the FPGA fabric, which houses large number of logic blocks, general purpose inputs/outputs and Intelectual Properties (IPs). 
 
 $"offset" = n_"word" * "word_size" = 7 * 32 = 224 "bits"$ -> Formula

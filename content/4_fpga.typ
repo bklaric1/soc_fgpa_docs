@@ -8,7 +8,7 @@ First FPGA was developed in 1985 by the company Xilinx (which was later aquired 
 
 The introduction of FPGAs provides an alternative to traditional Very Large Scale Integration (VLSI) technologies. For the both non-customizable Application Specific Integrated Circuits (ASICs) and semi-customazible Mask-Programmed Gate Arrays (MPGAs) the production was very costly and required extensive manufacturing effort and prototyping. To avoid the financial risk of prototyping new products, FPGAs began to see use. Their low time-to-market and risk made them the ultimate solution for the industry @stephen1992.
 
-For this paper, an SRAM-based FPGA with island-style routing will be examined, as it is the most commonly produced FPGA. What exactly all these terms mean, will be explained in the following chapters.
+For this paper, an SRAM-based FPGA with island-style routing will be examined, as it is the most commonly produced FPGA. What exactly all these terms mean, will be explained in the following chapters. It should also be mentioned, that 3-D FPGA architecture also exists, however, this paper will focus on the 2-D architecture.
 
 == Memory technologies in FPGA programming
 The programming of an FPGA, in its core, happens through programming of the electrical switches in connection to the logic blocks. Therefore, is the programming of FPGAs heavily dependent on the memory technology used in production, as the properties of the programmable switches has a notable influence on the logic architecture. There are a few types of memory technologies used or considered for use in FPGA programming: Erasable Programmable Read-Only Memory (EPROM), Electrically Erasable Programmable Read-Only Memory (EEPROM), flash, antifuse and Static Random-Access Memory (SRAM). Among these technologies, flash memory, antifuse and static memory are the ones, which are still used. @iida2018two.
@@ -223,7 +223,7 @@ FPGA vendors have gradually incorporated more functionalities into their program
 
 IPs are pre-designed, reusable functional blocks, since they are mostly common modules found in many designs. They are used to further enhance the functionality of FPGAs. As said, they are implemented from the manufacturer, but can also be implemented from a developer after production. They are usually licensed and sold @izumi2018.
 
-As seen in @fig:fpga_complex_architecture, FPGAs incorporate the IPs in many different forms, such as different controllers, RAM blocks, Digital Signal Processing (DSP) blocks and even whole processor subsystems.
+As seen in @fig:fpga_complex_architecture, FPGAs incorporate the IPs in many different forms, such as different controllers, RAM blocks, Digital Signal Processor (DSP) blocks and even whole processor subsystems.
 
 #figure(
   image("/figures/4_fpga/FPGA_complex_architecture.jpg", width: 75%),
