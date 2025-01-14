@@ -8,12 +8,10 @@ In this introduction, an initial overview of these concepts will be provided to 
 
 The name FPGA stands for Field Programmable Gate Array. It is a type of integrated circuit (IC) that can be purposely reconfigured after manufacturing. As the name suggests, an FPGA consists of connected programmable logic blocks @fpga_wikipedia.
 
-The SoC acronym stands for System on Chip, and it represents an integration of different computer system components in a single chip. These components typically include the most essential elements of a computer system, such as the CPU, system controller, memory controller, and the peripherals @soc_wikipedia.
+The SoC acronym stands for System on Chip, and it represents an integration of different computer system components in a single chip. These components are typically the most essential elements of a computer system, such as the CPU, system controller, memory controller, and the peripherals @soc_wikipedia.
 
 Integration of these two technologies in one IC combines the best of the both worlds, the software programmability of the SoC with the hardware flexibility of the FPGAs. The naming convention stays consistent, with the combined name being the union of the two: SoC FPGA.
 
-These technologies and their union will be examined in the following sections, including their architecture, operational principles, and practical applications. The aim of the paper is to provide a comprehensive understanding of both the individual areas and the main subject, the SoC FPGAs.
-
-The goal of this paper is to explore the technologies surrounding SoC FPGAs, providing an understanding of the basics and delving into details of the architecture. Reaching the end of this paper, the reader will gain a deeper understanding of these technologies and their impact and usage.
+These technologies and their union will be examined in the following sections, including the basics, their architecture, and practical applications. The aim of the paper is to provide a understanding of both the individual areas and the main subject, the SoC FPGAs. Reaching the end of this paper, the reader will gain a deeper understanding of these technologies and their impact and usage.
 
 #pagebreak()

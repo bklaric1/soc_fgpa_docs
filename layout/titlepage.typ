@@ -28,20 +28,20 @@
   set par(leading: 0.5em)
   
   // --- Title Page ---
-  v(0.5cm)
+  v(5mm)
   align(center, image(logo_path, width: 26%))
 
-  v(1mm)
+  v(3mm)
   align(center, text(font: sans-font, 1.2em, weight: 300, university))
 
   v(1mm)
   align(center, text(font: sans-font, 1em, weight: 200, description))
   
-  v(10mm)
-  align(center, text(font: sans-font, 2em, weight: 700, title))
+  v(35mm)
+  align(center, text(font: sans-font, 2.2em, weight: 700, title))
 
   let entries = ()
-  v(10mm)
+  v(50mm)
   entries.push(("Author: ", author))
   entries.push(("Supervisor: ", supervisor))
   entries.push(("Submission Date: ", submissionDate.display("[day].[month].[year]")))

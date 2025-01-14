@@ -16,16 +16,16 @@ The SoC usually incorporate core components corresponding to the following group
 - memory,
 - peripherals,
 - hardware accelerators @martin2001.
-#{ "" }
+#{ "  " }
 This structure is seen in most SoCs. A type of generic template incorporating these components can be seen in @fig:soc_generic. Due to these components not being a core topic of this paper, they won't be examined in great detail; however, their core concepts will be mentioned in the following sections.
 
 #figure(
   image("/figures/5_soc/SoC_template.jpg", width: 75%),
   caption: [
-    Generic template for a System-on-Chip @schaumont2013
+    Generic template for a SoC @schaumont2013
   ],
 )<fig:soc_generic>
-#{ "" }
+#{ "  " }
 The processor is the central controller of the SoC design, often implemented with RISC (Reduced Instruction Set Computer) architecture, for example ARM Cortex or RISC-V.
 
 Memory with its controllers is also a very important part of the SoC design. On-chip memory, for example SRAM, offers fast localized access, while off-chip memory, for example DRAM, offers more capacity. The internal cache memory is related to the processor.

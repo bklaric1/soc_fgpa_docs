@@ -8,7 +8,7 @@ The first FPGA was developed in 1985 by the company Xilinx (which was later acqu
 
 The introduction of FPGAs provides an alternative to traditional Very Large Scale Integration (VLSI) technologies. For the both non-customizable Application Specific Integrated Circuits (ASICs) and semi-customizable Mask-Programmed Gate Arrays (MPGAs) the production was very costly and required extensive manufacturing effort and prototyping. To avoid the financial risk of prototyping new products, FPGAs began to see use. Their low time-to-market and risk made them the ultimate solution for the industry @stephen1992.
 
-For this paper, an SRAM-based FPGA with island-style routing will be examined, as it is the most commonly produced FPGA. What exactly all these terms mean will be explained in the following chapters. It should also be mentioned that 3-D FPGA architecture also exists; however, this paper will focus on the 2-D architecture.
+For this paper, an SRAM-based FPGA with island-style routing will be examined, as it is the most commonly produced FPGA. What exactly all these terms mean will be explained in the following chapters. It should be mentioned that 3-D FPGA architecture also exists; however, this paper will focus on the 2-D architecture.
 
 == Memory technologies in FPGA programming
 The programming of an FPGA, in its core, happens through programming of the electrical switches in connection to the logic blocks. Therefore, is the programming of FPGAs is heavily dependent on the memory technology used in production, as the properties of the programmable switches have a notable influence on the logic architecture. There are a few types of memory technologies used or considered for use in FPGA programming: Erasable Programmable Read-Only Memory (EPROM), Electrically Erasable Programmable Read-Only Memory (EEPROM), flash, antifuse and Static Random-Access Memory (SRAM). Among these technologies, flash memory, antifuse and static memory are the ones that are still used. @iida2018two.
@@ -19,7 +19,7 @@ Static Random-Access Memory (SRAM)-based FPGAs are the most commonly used techno
 The read/write speed of SRAM is the highest of the three, with the lower and upper border being 1 ns.
 For implementation of an SRAM memory cell, 5 or 6 transistors are needed, which compared to other technologies is presents a big difference @yang2014.
 
-SRAM technology is volatile, and the configuration usually needs to be saved into external memory, which can present a challenge. Otherwise, the programming is lost when the power is cut.  These drawbacks become almost negligible, because of the compatibility with the CMOS technology, making this type of memory technology mainstream @iida2018two.
+SRAM technology is volatile, and the configuration usually needs to be saved into external memory, which can present a challenge. Otherwise, the programming is lost when the power is cut. These drawbacks become almost negligible, because of the compatibility with the CMOS technology, making this type of memory technology mainstream @iida2018two.
 
 === Flash-based programming
 Flash memory is, in its nature, non-volatile, enabling the FPGA to retain its configuration even when powered off. This eliminates the need for external memory to reload the configuration. Being smaller than SRAM is also a positive factor, with the flash memory requiring 1 or 2 transistors @yang2014.
@@ -33,6 +33,7 @@ With the antifuse programming, the widely used type is the metal-to-metal-type. 
 
 Antifuse-based programming is reliable, being robust against soft errors, and secure. Due to the way the programming takes place, reverse engineering is impossible, since using the standard methods of reverse engineering would destroy the chip. The main disadvantages of this technology are the lack of reconfigurability and the huge effort needed when programming, since a special programmer and a lot of time are needed. Also, no tests can be run to check if any errors occurred in the writing process @iida2018two.
 
+=== Summary
 To summarize the comparison between these three types of memory technology, the pros and cons can be seen in @fig:feature_comparison_memory.
 
 #figure(
@@ -48,7 +49,7 @@ Routing is a critical aspect of FPGA architecture, as it determines how the logi
 Island-based routing includes logic blocks placed in a grid style connected via vertical and horizontal programmable routing channels, as can be seen in @fig:island_style_fpga. The connections with the routing channel are found on every side of the logic blocks. The logic behind connection and switch boxes will be examined later in the following chapters. This type of routing architecture is the most common @yang2014.
 
 #figure(
-  image("/figures/4_fpga/Island_style_FPGA.jpg", width: 75%),
+  image("/figures/4_fpga/Island_style_FPGA.jpg", width: 65%),
   caption: [
     Island-style architecture in FPGAs @varghese2001
   ],
@@ -70,7 +71,7 @@ As seen in @fig:fpga_architecture_overview, the FPGAs consist of roughly three m
     Typical SoC FPGA architecture @iida2018two
   ],
 )<fig:fpga_architecture_overview>
-#{ "  " }
+#{ "   " }
 These components are the core building blocks of the FPGAs.
 
 The logic blocks, implemented through look-up tables and D-Flip-Flops, implement the core logic of the user programs. They are arranged in a regular grid pattern across the FPGA chip in the aforementioned island-style architecture.
@@ -97,7 +98,7 @@ The structure of a logic block can be seen in @fig:logic_block_structure. There,
     Structure of a logic block @farooq2012
   ],
 )<fig:logic_block_structure>
-#{ "  " }
+#{ "   " }
 Logic blocks consists of smaller units called logic elements.
 If the logic element is examined, a structure as shown in @fig:logic_block_structure can be seen. This is a standard logic element consisting of a Look-Up Table (LUT), D-FLip-Flop and an output multiplexer.
 
@@ -118,7 +119,7 @@ A deeper delve into LUTs presents some interesting information. For example, due
     Trade-off between area/delay and LUT inputs @amagasaki2018
   ],
 )<fig:lut_trade-off>
-#{ "  " }
+#{ "   " }
 D-Flip-Flops are basic registers used to save a value for one clock cycle. They are used in every logic element, as with them, a user can implement sequential logic instead of combinational.
 
 To differentiate, combinational logic is dependent only on the actual inputs, presenting itself in the form of standard logic gates, like AND, OR, XOR, and other gates.
@@ -151,7 +152,7 @@ The programmable interconnects, as already mentioned, incorporate three componen
     Overview of routing components in an FPGA @babu2021
   ],
 )<fig:fpga_routing>
-#{ "  " }
+#{ "   " }
 The routing channels or wire segments consist of wires connecting the logic blocks as well as I/O blocks through connection boxes and switch boxes and thus enabling communication between one another. They are an essential part of FPGAs; as they enable the connection of multiple logic blocks, more complex logic functions can be created. They also enable communication with external devices through the I/O blocks. A routing channel has a width, represented by the letter W, which corresponds to the amount of wires in one segment @rahman2003.
 For example, in @fig:fpga_routing the width of the wire segment is 4.
 There is also segment length, which represents how many logic blocks the wire segment spans across. This can be seen in greater detail in @fig:wire_length.
@@ -162,7 +163,7 @@ There is also segment length, which represents how many logic blocks the wire se
     Different wire lengths @masud2000
   ],
 )<fig:wire_length>
-#{ "  " }
+#{ "   " }
 The connection boxes are a unidirectional switching blocks that enable connections from the inputs and outputs coming from logic blocks in the form of local wires, also called short wire segments, with wires of the routing channels, either horizontally or vertically.
 
 These boxes are typically implemented using SRAM-based programmable switches, enabling reconfigurable connections at each connection point. Each potential connection within a connection box is controlled by an SRAM cell. The state of the SRAM cell, either '0' or '1', determines if the transistor will be conducting, since the SRAM cell is connected to the gate of a transistor (mostly CMOS), and thus a certain point is active or inactive.
@@ -184,7 +185,7 @@ The three typical connection types inside a switch box are:
 - disjoint,
 - universal,
 - Wilton @joseph2018.
-#{ "  " }
+#{ "   " }
 With the disjoint connection type, each wire segment connects to exactly three other wire segments. Uses single-length wires.
 
 The universal and Wilton connection types require fewer wire segments and transistors per connection point; however, with longer wire segments, they use more switches per track and therefore require more transistor area overall.
@@ -200,7 +201,7 @@ The difference between these connection types can be seen in @fig:switch_boxes_c
   ],
 )<fig:switch_boxes_connections>
 #{ "  " }
-The value $F_s$ is used to represent how many connections each incoming wire segment can make inside a switch box. For 2-D FPGAs: $F_s = 3$; for 3-D FPGAs: $F_s = 3$ @rahman2003
+The value $F_s$ is used to represent how many connections each incoming wire segment can make inside a switch box. For 2-D FPGAs: $F_s = 3$; for 3-D FPGAs: $F_s = 5$ @rahman2003.
 
 An in-depth view of these components can be examined in @fig:complex_view.
 
@@ -236,11 +237,11 @@ As seen in @fig:fpga_complex_architecture, FPGAs incorporate the IPs in many for
     Modern heterogeneous FPGAs with incorporated IPs @boutros2022
   ],
 )<fig:fpga_complex_architecture>
-#{ "  " }
+#{ " " }
 The IPs are usually split up into two categories, based on how they are implemented:
 - soft IPs,
 - hard IPs.
-#{ "  " }
+#{ "   " }
 There are also firm IPs, which find themselves in between these two kinds, but the paper will focus on the mentioned two types.
 
 Soft IPs are functional blocks implemented using the aforementioned structure consisting of logic blocks, interconnects, and I/O blocks. Since they are essentially programmed into FPGAs, they are usually implemented after production, thus making them very flexible and portable. These IPs have a disadvantage in the form of no guarantee of timing or power characteristics, since it's dependent on which process or application it's implemented in. Some examples of soft IPs are: interface blocks, encryption blocks, networking blocks, controllers, and whole processor systems @ochoaruiz2013[pp. 62--64].
@@ -250,12 +251,12 @@ Hard IPs are different from soft IPs in form that they are implemented directly 
 An example FPGA with different implemented IPs can be seen @fig:fpga_ips, presenting different possibilities of IP implementations.
 
 #figure(
-  image("/figures/4_fpga/FPGA_IPs.jpg", width: 75%),
+  image("/figures/4_fpga/FPGA_IPs.jpg", width: 85%),
   caption: [
     Different IPs implemented in an FPGA chip @ochoaruiz2013
   ],
 )<fig:fpga_ips>
-#{ "  " }
+#{ "   " }
 The ability to implemented whole processor systems presents the introduction to the SoC capabilities of the FPGA chips, able to incorporate processor systems with FPGA fabric in one chip.
 
 == Programming of an FPGA
@@ -275,5 +276,3 @@ As seen in @fig:fpga_design_flow, the typical design flow encompasses a few diff
     Typical FPGA design flow @iida2018five
   ],
 )<fig:fpga_design_flow>
-
-//#pagebreak()
