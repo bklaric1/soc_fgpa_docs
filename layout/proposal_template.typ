@@ -60,7 +60,7 @@
   }
 
   // --- Paragraphs ---
-  set par(leading: 0.85em, justify: true, first-line-indent: 1.3em, spacing: 0.85em)
+  set par(leading: 0.75em, justify: true, first-line-indent: 1.3em, spacing: 0.85em)
 
   // --- Citation Style ---
   set cite(style: "institute-of-electrical-and-electronics-engineers")

@@ -14,4 +14,6 @@ Integration of these two technologies in one IC combines the best of the both wo
 
 These technologies and their union will be examined in the following sections, including their architecture, operational principles, and practical applications. The aim of the paper is to provide a comprehensive understanding of both the individual areas and the main subject, the SoC FPGAs.
 
+The goal of this paper is to explore the technologies surrounding SoC FPGAs, providing an understanding of the basics and delving into details of the architecture. Reaching the end of this paper, the reader will gain a deeper understanding of these technologies and their impact and usage.
+
 #pagebreak()

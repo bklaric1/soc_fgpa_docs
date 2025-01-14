@@ -4,7 +4,7 @@ This subject has been a point of my interest for some time now. I first took not
 #figure(
   image("/figures/1_motivation/SoC_FPGA.jpg", width: 75%),
   caption: [
-    Terasic DE1-SoC board with Cyclone V SoC FPGA chip
+    Terasic DE1-SoC board with Cyclone V SE SoC FPGA chip
   ],
 )<fig:terasic>
 #{ "  " }

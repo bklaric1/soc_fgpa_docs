@@ -275,5 +275,5 @@ As seen in @fig:fpga_design_flow, the typical design flow encompasses a few diff
     Typical FPGA design flow @iida2018five
   ],
 )<fig:fpga_design_flow>
-#{ "  " }
-#pagebreak()
+
+//#pagebreak()

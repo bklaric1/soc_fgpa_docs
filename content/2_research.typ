@@ -2,7 +2,7 @@
 The research for this paper was done using many methods. 
 For general information, I used many internet pages, like Wikipedia, various technical blogs, and even online teaching material from a few subjects held at the Technical University of Applied Research. The subjects in question were the already mentioned _Digital Technology_ and _Design of Digital Systems 1_, which were regular curriculum for my study degree.
 
-For more technical details included, I referred to the datasheets of the manufacturer, for example, the datasheet of the Altera (which was later acquired by Intel) Cyclone 5 FPGA SoC, which I referenced many times in my presentation and will be referencing in this paper as well.
+For more technical details included, I referred to the datasheets of the manufacturer, for example, the datasheet of the Altera (which was later acquired by Intel) Cyclone 5 SE FPGA SoC, which I referenced many times in my presentation and will be referencing in this paper as well.
 
 The scientific research was done using Google Scholar, IEEE Xplore and Research Gate for the papers regarding the same ground subject.
 
