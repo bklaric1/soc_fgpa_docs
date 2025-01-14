@@ -40,7 +40,6 @@
   v(10mm)
   align(center, text(font: sans-font, 2em, weight: 700, title))
 
-
   let entries = ()
   v(10mm)
   entries.push(("Author: ", author))
