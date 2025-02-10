@@ -42,7 +42,7 @@ jobs:
           WITH_V: true
           DEFAULT_BUMP: 'patch'
 
-      - uses: typst-community/setup-typst@v3
+      - uses: typst-community/setup-typst@v4
 
       - name: Compile documents
         run: |
