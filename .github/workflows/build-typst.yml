@@ -24,7 +24,7 @@ jobs:
           fc-cache -f -v
           rm -rf newcomputermodern*
 
-      - uses: typst-community/setup-typst@v4
+      - uses: typst-community/setup-typst@v5
 
       - name: Compile documents
         run: |
